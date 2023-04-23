@@ -9,14 +9,21 @@ module.exports = {
     extend: {
       colors: {
         background: '#070707',
-        "whitevs": "#E5E9F0",
-        "purplevs": {
-          500: "#7000FF",
-          700: "#4D5BCE"
+        whitevs: '#E5E9F0',
+        purplevs: {
+          500: '#4D5BCE',
+          700: '#7000FF',
+        },
+        grayvs: {
+          500: '#607B96',
+        },
+        greenvs: {
+          500: '#43D9AD',
+        },
+        pinkvs: {
+          500: "#E99287"
         }
       },
-
-      
     },
   },
   plugins: [],

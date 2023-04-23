@@ -7,7 +7,10 @@ import React from 'react';
 
 const firaCode = Fira_Code({
   subsets: ['latin'],
+  display: "swap",
+  preload: true
 });
+
 
 export const metadata = {
   title: 'Gustavo Mendonca | Portfolio',

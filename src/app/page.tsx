@@ -1,4 +1,4 @@
-import { Greetings } from "@/components/Greetings";
+import { Greetings } from '@/components/Greetings';
 import { Header } from '@/components/Header';
 
 export default function Home() {
@@ -9,7 +9,9 @@ export default function Home() {
       </nav>
 
       <main>
-        <Greetings />
+        <div className="grid grid-cols-2">
+          <Greetings />
+        </div>
       </main>
     </div>
   );

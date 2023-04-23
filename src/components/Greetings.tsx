@@ -5,6 +5,7 @@ interface GreetingsProps {
 }
 
 import { CodeBlockHome } from "./CodeBlockHome";
+import { CvButton } from "./CvButton";
 import { Typing } from "./Typing";
 
 export function Greetings({label = ">"}: GreetingsProps) {  
@@ -24,6 +25,7 @@ export function Greetings({label = ">"}: GreetingsProps) {
 
       <div className="">
         <CodeBlockHome />
+        <CvButton />
       </div>
     </div>
   );

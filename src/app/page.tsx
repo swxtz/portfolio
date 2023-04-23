@@ -1,3 +1,4 @@
+import { Greetings } from "@/components/Greetings";
 import { Header } from '@/components/Header';
 
 export default function Home() {
@@ -7,6 +8,9 @@ export default function Home() {
         <Header title="<GustavoMendonça />" />
       </nav>
 
+      <main>
+        <Greetings />
+      </main>
     </div>
   );
 }

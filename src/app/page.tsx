@@ -1,5 +1,4 @@
 import { Greetings } from '@/components/Greetings';
-import { Header } from '@/components/Header';
 import islandImg from "../../public/island-with-computer.png"
 import Image from "next/image";
 

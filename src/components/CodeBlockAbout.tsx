@@ -1,5 +1,4 @@
-
-import { HeaderAbout } from "./HeaderAbout";
+import { HeaderAbout } from './HeaderAbout';
 
 export function CodeBlockAbout() {
   return (

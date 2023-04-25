@@ -20,12 +20,12 @@ export function HeaderAbout() {
           <span className="text-purplevs-500 text-2xl font-semibold">
             @swxtz
           </span>
-          <span className="text-lg text-grayvs-500">Created 1 months ago</span>
+          <span className="text-lg text-grayvs-500 font-medium">Created 1 months ago</span>
         </div>
       </div>
-      <div className="flex flex-row ">
+      <div className="flex flex-row gap-2">
         <Star color="#607B96" />
-        <span>{data.stars} stars</span>
+        <span className="text-lg text-grayvs-500 font-medium">{data.stars} stars</span>
       </div>
     </div>
   );

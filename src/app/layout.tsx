@@ -24,7 +24,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={clsx('bg-background text-gray-500 h-screen w-screen px-24 overflow-hidden', firaCode.className)}>
+      <body
+        className={clsx(
+          'bg-background text-gray-500 h-screen w-screen px-24 scrollbar scrollbar-thumb-zinc-900 scrollbar-track-zinc-700 overflow-x-hidden',
+          firaCode.className
+        )}
+      >
         <nav>
           <Header title="<GustavoMendonça />" />
         </nav>

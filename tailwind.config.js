@@ -24,8 +24,13 @@ module.exports = {
         pinkvs: {
           500: '#E99287',
         },
+        bluevs: {
+          500: "#011221"
+        }
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-scrollbar")
+  ],
 };

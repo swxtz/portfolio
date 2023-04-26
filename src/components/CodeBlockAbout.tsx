@@ -4,8 +4,8 @@
 
 import { useId } from 'react';
 import { HeaderAbout } from './HeaderAbout';
-import island from "../../public/island-with-pipe.png";
-import Image from "next/image";
+import island from '../../public/island-with-pipe.png';
+import Image from 'next/image';
 
 export function CodeBlockAbout() {
   const lines = [
@@ -25,11 +25,10 @@ export function CodeBlockAbout() {
           <span className="text-purplevs-500">
             import <span className="text-greenvs-500">aboutMe</span> from{' '}
             <span className="text-pinkvs-500">{`"./portfolio"`}</span>
-            <div className="flex flex-col mt-5">
+            <div className="flex flex-col mt-5 pb-4">
               {lines.map((line) => (
-                <span key={useId()} className="mt-1">{`// ${line}`}</span>
+                <span key={useId()} className="mt-1 text-grayvs-500">{`// ${line}`}</span>
               ))}
-              <Image src={island} alt="" width={343} height={321} />
             </div>
             <div className=""></div>
           </span>

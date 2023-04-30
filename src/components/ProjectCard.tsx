@@ -1,6 +1,13 @@
 import Image from 'next/image';
 
-export function ProjectCard() {
+interface ProjectCardProps {
+  title: string;
+  imageUrl: string;
+  description: string;
+  githubUrl: string;
+}
+
+export function ProjectCard({title, imageUrl, description, githubUrl}: ProjectCardProps) {
   const data = [
     {
       name: 'spotify-ui',
@@ -14,11 +21,11 @@ export function ProjectCard() {
 
   return (
     <div className="w-80 mt-4">
-      <span className="text-base">spotify-ui</span>
+      <span className="text-base">{title}</span>
       <div className="rounded bg-slate-950 mt-8">
         <div className="h-[50%]">
           <Image
-            src="https://media.discordapp.net/attachments/1095183064604364942/1098672388876542042/image.png?width=1366&height=768"
+            src={imageUrl}
             quality={100}
             alt="title"
             width={320}
@@ -27,10 +34,13 @@ export function ProjectCard() {
           />
         </div>
         <div className="flex flex-col mx-6">
-          <span className="mt-7">
-            Um clone da interface do spotify
-          </span>
-          <a className="mt-6 mb-7 text-white px-4 py-3 bg-grayvs-700 w-fit rounded" href="https://github.com/swxtz/spotify-ui">View project</a>
+          <span className="mt-7">Um clone da interface do spotify</span>
+          <a
+            className="mt-6 mb-7 text-white px-4 py-3 bg-grayvs-700 w-fit rounded"
+            href={githubUrl}
+          >
+            View project
+          </a>
         </div>
       </div>
     </div>

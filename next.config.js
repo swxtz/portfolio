@@ -11,6 +11,14 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'github.com',
       },
+      {
+        protocol: "https",
+        hostname: "camo.githubusercontent.com"
+      },
+      {
+        protocol: "https",
+        hostname: "media.discordapp.net"
+      }
     ],
   },
 

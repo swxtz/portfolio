@@ -17,8 +17,8 @@ export function ActiveLink({ href, children, ...rest }: ActiveLinkProps) {
             href={href}
             className={
                 isActive
-                    ? "text-[28px] tracking-[0.12rem] font-bold text-cream-400"
-                    : "text-[28px] tracking-[0.12rem]"
+                    ? "text-[28px] tracking-[0.12rem] font-bold text-cream-400 hover:brightness-[0.7] hover:transition-all"
+                    : "text-[28px] tracking-[0.12rem] hover:brightness-[0.7] hover:transition-all"
             }
             {...rest}
         >

@@ -23,12 +23,11 @@ export default function RootLayout({
     return (
         <html lang="" className="h-full">
             <body
-                className={cn(
-                    "bg-[#212121] text-cream-500",
-                    imbMono.className
-                )}
+                className={cn("bg-[#212121] text-cream-500", imbMono.className)}
             >
-                <Navbar />
+                <div className="bg-[#2B2B2B]">
+                    <Navbar />
+                </div>
                 {children}
             </body>
         </html>

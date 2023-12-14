@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
-import { Roboto_Mono } from "next/font/google";
+import { IBM_Plex_Mono, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar/Navbar";
 import { cn } from "@/lib/utils";
 
-const robotoMono = Roboto_Mono({ subsets: ["latin"] });
+export const robotoMono = Roboto_Mono({ subsets: ["latin"] });
+const imbMono = IBM_Plex_Mono({
+    subsets: ["latin"],
+    weight: ["100", "200", "300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
     title: "<Gustavo Mendonça />",
-    description: "Developer, Software Engineer, and Student"
+    description: "Developer, Software Engineer, and Student",
 };
 
 export default function RootLayout({
@@ -21,7 +25,7 @@ export default function RootLayout({
             <body
                 className={cn(
                     "bg-[#212121] text-cream-500",
-                    robotoMono.className
+                    imbMono.className
                 )}
             >
                 <Navbar />

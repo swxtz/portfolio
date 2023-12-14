@@ -1,7 +1,11 @@
-
+import { Hero } from "@/components/Hero/Hero";
 
 export default function Home() {
     return (
-        <h1>Home</h1>
+        <main>
+            <div className="px-24 pt-[100px]">
+                <Hero />
+            </div>
+        </main>
     );
 }

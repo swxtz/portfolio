@@ -4,7 +4,7 @@ import { Socials } from "@/components/Socials/Socials";
 export default function Home() {
     return (
         <main>
-            <div className="px-24 pt-[100px]">
+            <div className="px-24 pt-20">
                 <Hero />
                 <Socials />
             </div>

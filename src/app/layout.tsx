@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/Navbar/Navbar";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "<Gustavo Mendonça />",
@@ -12,11 +14,19 @@ export const metadata: Metadata = {
 export default function RootLayout({
     children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode;
 }) {
     return (
-        <html lang="pt-br">
-            <body className={inter.className}>{children}</body>
+        <html lang="" className="h-full">
+            <body
+                className={cn(
+                    "bg-[#212121] text-cream-500",
+                    robotoMono.className
+                )}
+            >
+                <Navbar />
+                {children}
+            </body>
         </html>
     );
 }

@@ -9,6 +9,9 @@ const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "<Gustavo Mendonça />",
     description: "Developer, Software Engineer, and Student",
+    openGraph: {
+        images: "/og.png"
+    }
 };
 
 export default function RootLayout({

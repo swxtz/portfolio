@@ -10,7 +10,7 @@ export function SocialLinks({ img, href, alt, ...rest }: SocialLinksProps) {
     return (
         <div className="">
             <Link href={href} {...rest}>
-                <Image src={img} alt={alt} />
+                <Image src={img} alt={alt} className="hover:brightness-[0.7] hover:transition-all" />
             </Link>
         </div>
     );
